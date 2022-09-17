@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Portofolio" />
+    <meta name="description" content="Personal Website Portofolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portofolio</title>
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="dist/css/tailwind.css" />
+    <!-- TailwindCSS -->
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- Lato -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bolg text-primary block py-6 uppercase dark:text-white">Deuwi Satriya Irawan</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+              <nav class="hidden absolute py-5 bg-white dark:bg-dark lg:dark:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:shadow-none lg:bg-transparent lg:static lg:max-w-full lg:rounded-none" id="nav-menu">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="navbar-hover dark:text-white">Beranda</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="navbar-hover dark:text-white">Tentang Saya</a>
+                </li>
+                <li class="group">
+                  <a href="#portofolio" class="navbar-hover dark:text-white">Portofolio</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="navbar-hover dark:text-white">Contact</a>
+                </li>
+                <li class="flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" name="dark-toggle" id="dark-toggle" class="hidden">
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section -->
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl dark:text-white">Halo Semua ✋, Saya <span class="block dark:text-white font-bold text-4xl mt-1 text-dark lg:text-5xl">Deuwi Satriya Irawan</span></h1>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl dark:text-white">Students & <span class="text-dark dark:text-white">Full Stack Web Developer </span></h2>
+            <p class="text-secondary font-medium mb-10 leading-relaxed dark:text-white">Belajar Web itu menyenangkan bukan. <span class="font-bold text-dark dark:text-white">bukan!</span></p>
+            <a href="" class="text-base font-semibold text-white bg-primary py-3 px-4 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/4 lg:mt-0 lg:right-0">
+            <div class="relative mt-10">
+              <img src="dist/img/satria.png" alt="satria irawan" class="w-full mx-auto relative z-10" />
+              <span class="absolute -bottom-0 md:scale-125">
+                <svg width="400 " height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#000080"
+                    d="M32.5,-32.6C41.4,-23.6,47.4,-11.8,45.2,-2.2C43,7.4,32.6,14.8,23.7,24.4C14.8,34.1,7.4,46,-5.1,51.1C-17.6,56.3,-35.3,54.6,-45.9,44.9C-56.6,35.3,-60.2,17.6,-61.6,-1.4C-63.1,-20.5,-62.3,-41,-51.6,-49.9C-41,-58.8,-20.5,-56.2,-4.3,-51.8C11.8,-47.5,23.6,-41.5,32.5,-32.6Z"
+                    transform="translate(100 100) scale(1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="text-bold uppercase text-primary text-lg mb-3 dark:text-white">Tentang Saya</h4>
+            <h2 class="font-bolg text-dark text-3xl mb-5 max-w-mld lg:text-lg dark:text-white">Belajar Laravel menyenangkan</h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-4xl">Laravel itu easy</p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-2xl mb-4 text-dark lg:pt-10 dark:text-white">Mari Berteman</h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Ikuti akun berikut ya teman-teman</p>
+            <div class="flex items-center mb-2 dark:text-white">
+              <!-- Github -->
+              <a href="https://github.com/satriai0508" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+                <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!-- Github -->
+              <!-- Instagram -->
+              <a href="https://instagram.com/satriairawan05_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+                <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <!-- Facebook -->
+              <a href="https://facebook.com/satriai0508" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+                <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Facebook</title>
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <!-- Twitter -->
+              <a href="https://twitter.com/satriairawan05_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+                <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Twitter</title>
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <!-- Twitter -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+
+    <!-- Portofolio Section -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2 uppercase dark:text-white">Portofolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Project Terbaru</h2>
+            <p class="font-medium text-secondary text-md dark:text-white">Berikut ini Project yang terbaru di kerjakan...</p>
+          </div>
+        </div>
+        <div class="w-full px-4 flex flex-wrap justify-center">
+          <div class="mb-12 p-4 md:w-1/2 xl:w-10/12 xl:mx-auto">
+            <div class="rounded-md shadow-md overflow-hidden mb-3">
+              <img src="dist/img/portofolio/umkm-laundry.png" alt="SIG UMKM Laudry" class="w-full" />
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white"><a href="https://github.com/satriai0508/Sistem-Informasi-Geografis-UMKM-Laundry" class="text-dark dark:text-white">Sistem Informasi Geografis Usaha Mikro Kecil Menengah Laundry di Kota Samarinda</a></h3>
+              <p class="font-medium text-base text-secondary dark:text-white">SIG UMKM Laundry berbasis Website menggunakan Laravel dan Bootstrap serta Leaflet sebagai OpenStreetMap</p>
+            </div>
+            <div class="rounded-md shadow-md overflow-hidden mb-3">
+              <img src="dist/img/portofolio/umkm-barbershop.png" alt="SIG UMKM Barbershop" class="w-full" />
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white"><a href="https://github.com/satriai0508/Sistem-Informasi-Geografis-UMKM-Barbershop" class="text-dark dark:text-white">Sistem Informasi Geografis Usaha Mikro Kecil Menengah Barbershop di Kota Samarinda</a></h3>
+              <p class="font-medium text-base text-secondary dark:text-white">SIG UMKM Barbershop berbasis Website menggunakan Laravel dan Bootstrap serta Leaflet sebagai OpenStreetMap</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2 uppercase dark:text-white">Contact</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Hubungi Kami</h2>
+            <p class="font-medium text-secondary text-md dark:text-white">Teman-teman dapat menghubungi kami</p>
+          </div>
+        </div>
+        <form action="" method="post">
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-bold text-primary dark:text-white">Name</label>
+              <input type="text" name="name" id="name" class="w-full bg-slate-200 text-dark dark:text-white p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary focus:dark:ring-white focus:dark:border-dark" />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base font-bold text-primary dark:text-white">Email</label>
+              <input type="email" name="email" id="email" class="w-full bg-slate-200 text-dark dark:text-white p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary focus:dark:ring-white focus:dark:border-dark" />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="no_hp" class="text-base font-bold text-primary dark:text-white">No HP</label>
+              <input type="text" name="no_hp" id="no_hp" class="w-full bg-slate-200 text-dark dark:text-white p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary focus:dark:ring-white focus:dark:border-dark" />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="pesan" class="text-base font-bold text-primary dark:text-white">Pesan</label>
+              <textarea type="text" name="pesan" id="pesan" class="w-full bg-slate-200 text-dark dark:text-white p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary focus:dark:ring-white focus:dark:border-dark h-32"></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 lg:w-1/2">
+            <p class="font-medium text-white">&copy; Satria Irawan 2022</p>
+          </div>
+          <div class="flex items-center w-full lg:w-1/2">
+            <p class="text-white font-semibold text-2xl uppercase mr-3">Hubungi kami</p>
+            <!-- Github -->
+            <a href="https://github.com/satriai0508" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+              <svg class="fill-current text-white" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+            <!-- Github -->
+            <!-- Instagram -->
+            <a href="https://instagram.com/satriairawan05_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+              <svg class="fill-current text-white" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <!-- Facebook -->
+            <a href="https://facebook.com/satriai0508" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+              <svg class="fill-current text-white" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Facebook</title>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <!-- Twitter -->
+            <a href="https://twitter.com/satriairawan05_" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-dark hover:border-primary hover:bg-primary hover:text-white  dark:border-white">
+              <svg class="fill-current text-white" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Twitter</title>
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+            <!-- Twitter -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section -->
+
+    <!-- Back to Top -->
+    <a href="#home" id="to-top" class="h-14 w-14 bg-primary rounded-full hover:animate-pulse fixed z-[99999] bottom-4 right-4 p-4 hidden justify-center items-center">
+      <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+    <!-- Back to Top -->
+
+    <script src="dist/script.js"></script>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </body>
+</html>
