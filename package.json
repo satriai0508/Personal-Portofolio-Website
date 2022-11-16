@@ -7,7 +7,7 @@
   "scripts": {
     "tailwind-dev": "npx tailwindcss -i ./src/main.css -o ./dist/style.css",
     "tailwind-watch": "npx tailwindcss -i ./src/main.css -o ./dist/style.css --watch",
-    "tailwind-minify" : "npx tailwindcss -o dist/css/tailwind.css --minify"
+    "tailwind-production": "npx tailwindcss -o dist/css/tailwind.css --minify"
   },
   "keywords": [
     "web",
@@ -18,10 +18,10 @@
   "author": "Deuwi Satriya Irawan",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.11",
-    "postcss": "^8.4.16",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.2.4"
   }
 }
